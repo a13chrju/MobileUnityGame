@@ -44,7 +44,7 @@ public class gameFile : MonoBehaviour {
 
         if (istarted) {
             timeGone += Time.deltaTime;
-            timerText.text = timeGone.ToString("f1");
+            timerText.text = timeGone.ToString("f1") + "/"+ levelLength;
         }
         if (timeGone > levelLength)
         {

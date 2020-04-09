@@ -24,7 +24,6 @@ public class move : MonoBehaviour
     public bool isattacking = false;
     private float attacktime;
     public bool isGrounded = true;
-    public Button attkBtn;
 
     public Canvas cantjumptxt;
     // Use this for initialization
@@ -108,7 +107,6 @@ public class move : MonoBehaviour
         Debug.Log("AAAAAAattacked");
         Debug.Log("CAN attack :" + isattacking);
         attacktime = Time.time + 0.5f;
-        attkBtn.interactable = false;
     }
 
 
